@@ -4,6 +4,7 @@ const siteMetadata =  {
 }
 
 module.exports = {
+    siteMetadata: siteMetadata,
     plugins: [
       {
         resolve: `gatsby-plugin-mdx`,

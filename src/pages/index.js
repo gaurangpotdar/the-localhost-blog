@@ -1,5 +1,14 @@
+import { useStaticQuery } from 'gatsby'
 import React from 'react'
 
 export default  () => {
-    return <h1>Hello World</h1>
+    const {title, description} = useStaticQuery()
+    return(
+    <>
+        <h1>{title}</h1>
+        <p>
+            {description}
+        </p>
+    </>
+    )
 }
